@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainact">
+
+    <LinearLayout 
+        android:id="@+id/menuIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Page1Btn"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+  
+            android:textColor="@drawable/tab_text_selector"
+            android:background="@drawable/menu1"/>
+        <Button
+            android:id="@+id/Page2Btn"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+           
+            android:textColor="@drawable/tab_text_selector"
+            android:background="@drawable/menu2" />
+        <Button
+            android:id="@+id/Page3Btn"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+           
+            android:textColor="@drawable/tab_text_selector"
+            android:background="@drawable/menu3" />
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="horizontal"
+        android:layout_below="@id/menuIcon" />
+
+</RelativeLayout>

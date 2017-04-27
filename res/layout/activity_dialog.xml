@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/framelayout1_root">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:ems="10" />
+
+ <Button
+     android:id="@+id/cancel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="180px"
+     android:text="Cancel" />
+
+ <Button
+     android:id="@+id/ok"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="200px"
+     android:layout_marginTop="180px"
+     android:text="Ok" />
+ <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+  
+        android:text="계획표"
+        android:textSize="12pt" />
+</FrameLayout>

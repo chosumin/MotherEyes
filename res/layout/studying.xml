@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/cam"
+  android:id="@+id/stud"
+ >
+    
+    <SurfaceView
+        android:id="@+id/sv_viewFinder"
+        android:layout_width="900px"
+        android:layout_height="700px"
+        android:layout_marginTop="100px" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150px"
+        android:layout_height="100px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="1150px"
+        android:background="@drawable/btnhome"
+        android:onClick="mOnClick" />
+
+    <TextView
+        android:id="@+id/ellapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="1140px"
+        android:text="00:00:00"
+        android:textColor="#000000"
+        android:textSize="85px" />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="150px"
+        android:layout_height="100px"
+        android:layout_marginLeft="550px"
+        android:layout_marginTop="1150px"
+        android:background="@drawable/st"
+        android:onClick="mOnClick" />
+
+    <Button
+        android:id="@+id/btnend"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="880px"
+        android:background="#00ff0000"
+        android:onClick="mOnClick" />
+
+</RelativeLayout>

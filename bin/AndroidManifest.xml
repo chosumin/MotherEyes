@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tistory.whdghks913.exampletabs"
+    android:versionCode="5"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ii"
+        android:label="엄마눈"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pouminii.MotherEyes.MainActivity"
+            android:label="엄마눈" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                     
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pouminii.MotherEyes.Page1Activity"
+            android:label="엄마눈">
+            <intent-filter>
+             <data android:host="@string/kakaolink_host" android:scheme="@string/kakao_scheme"/>
+               </intent-filter>       
+                </activity>
+        <activity
+            android:name="com.pouminii.MotherEyes.Page2Activity"
+            android:label="엄마눈" >
+        </activity>
+        <activity
+            android:name="com.pouminii.MotherEyes.Page3Activity"
+            android:label="엄마눈" >
+        </activity>
+        <activity
+            android:name="com.pouminii.MotherEyes.Studying"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:label="엄마눈" >
+        </activity>
+         <activity
+            android:name="com.pouminii.MotherEyes.Splash"
+            android:label="엄마눈"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         <activity
+            android:name="com.pouminii.MotherEyes.Wait"
+            android:label="엄마눈"
+              >
+        </activity>
+         <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key"/>
+    </application>
+
+</manifest>
